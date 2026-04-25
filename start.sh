@@ -35,7 +35,7 @@ export LD_LIBRARY_PATH="/opt/intel/oneapi/compiler/latest/lib:/opt/intel/oneapi/
   --port "${WHISPER_HTTP_PORT}" \
   -l "${WHISPER_LANG}" \
   -bs "${WHISPER_BEAM_SIZE}" \
-  --initial-prompt "${WHISPER_INITIAL_PROMPT}" \
+  --prompt "${WHISPER_INITIAL_PROMPT}" \
   --suppress-nst &
 WHISPER_PID=$!
 
