@@ -38,6 +38,7 @@ services:
       WHISPER_BEAM_SIZE: "5"
       WHISPER_HTTP_HOST: "127.0.0.1"  # keep internal
       WHISPER_HTTP_PORT: "8910"
+      WHISPER_INITIAL_PROMPT: "glossary" # Description of audio that can help Whisper transcribe unusual words better
 
       # Wyoming bind address/port
       WYOMING_URI: "tcp://0.0.0.0:7891"
