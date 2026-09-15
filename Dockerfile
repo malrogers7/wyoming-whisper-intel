@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # --- build whisper.cpp (Intel oneAPI SYCL) ---
 WORKDIR /whisper.cpp
-RUN git clone https://github.com/ggerganov/whisper.cpp.git . \
+RUN git clone https://github.com/ggml-org/whisper.cpp.git . \
  && git reset --hard v1.9.3 \
  && cmake -B build \
       -DGGML_SYCL=ON \
