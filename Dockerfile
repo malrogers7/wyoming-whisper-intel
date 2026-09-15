@@ -20,7 +20,7 @@ RUN git clone https://github.com/ggerganov/whisper.cpp.git . \
       -DGGML_SYCL_F16=ON \
       -DCMAKE_C_COMPILER=icx \
       -DCMAKE_CXX_COMPILER=icpx \
- && cmake --build build -j --config Release
+ && cmake --build build -j2 --config Release
 
 # --- wyoming bridge (API client) ---
 WORKDIR /
